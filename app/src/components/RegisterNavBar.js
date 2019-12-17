@@ -24,6 +24,7 @@ class RegisterNavBar extends React.Component {
                     title='Account aanmaken'
                     alignment='start'
                     leftControl={this.BackAction()}
+                    style={{backgroundColor: '#1A2138'}}
                 />
             </Layout>
         );
