@@ -23,7 +23,7 @@ class DashboardNavBar extends React.Component {
     };
 
     menuData = [
-        {title: 'Uitloggen', icon: LogoutIcon},
+        {title: 'Uitloggen', icon: LogoutIcon, style: {backgroundColor: '#151A30'}},
     ];
 
     onMenuActionPress = () => {
@@ -72,6 +72,7 @@ class DashboardNavBar extends React.Component {
                     }
                 }
             ).catch(err => {
+                this.props.navigation.navigate('Login');
                 alert('Error: De server is waarschijnlijk offline...');
                 console.log(err)
             }

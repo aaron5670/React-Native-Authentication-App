@@ -5,14 +5,6 @@ import Carousel from "react-native-snap-carousel/src/carousel/Carousel";
 
 const {width: viewportWidth} = Dimensions.get('window');
 
-
-const Images = [
-    {uri: "https://i.imgur.com/sNam9iJ.jpg"},
-    {uri: "https://i.imgur.com/N7rlQYt.jpg"},
-    {uri: "https://i.imgur.com/UDrH0wm.jpg"},
-    {uri: "https://i.imgur.com/Ka8kNST.jpg"}
-];
-
 const Videos = [
     {
         id: "WpIAc9by5iU",
@@ -41,7 +33,7 @@ const Videos = [
     }
 ];
 
-export class MyCarousel extends React.Component {
+export class VideosCarousel extends React.Component {
 
     _renderItem = ({item, index}) => {
         console.log("rendering,", index, item)
