@@ -1,6 +1,6 @@
 import * as React from "react";
 import {connect} from 'react-redux';
-import {Text} from "react-native-ui-kitten";
+import {Text} from "@ui-kitten/components";
 
 class SettingsTab extends React.Component {
     render() {

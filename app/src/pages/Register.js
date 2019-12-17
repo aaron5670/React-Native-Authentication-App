@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet} from 'react-native';
 import {connect} from 'react-redux';
-import {Icon, Button, Input, Layout, Text} from 'react-native-ui-kitten';
+import {Icon, Button, Input, Layout, Text} from "@ui-kitten/components";
 import RegisterNavbar from "../components/RegisterNavBar";
 import {changeUserStatusAction} from "../redux/Reducer";
 

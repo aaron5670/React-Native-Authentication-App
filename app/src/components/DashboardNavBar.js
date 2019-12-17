@@ -5,7 +5,7 @@ import {
     OverflowMenu,
     TopNavigation,
     TopNavigationAction,
-} from 'react-native-ui-kitten';
+} from "@ui-kitten/components";
 import {withNavigation} from "react-navigation";
 
 const MenuIcon = (style) => (
@@ -85,6 +85,7 @@ class DashboardNavBar extends React.Component {
                 <TopNavigation
                     title='Dashboard'
                     rightControls={this.renderMenuAction()}
+                    style={{backgroundColor: '#1A2138'}}
                 />
             </Layout>
         );

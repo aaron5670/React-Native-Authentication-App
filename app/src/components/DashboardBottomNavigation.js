@@ -4,7 +4,7 @@ import {
     BottomNavigation,
     BottomNavigationTab,
     Icon,
-} from 'react-native-ui-kitten';
+} from "@ui-kitten/components";
 import {withNavigation} from "react-navigation";
 import {changeSelectedTabAction} from "../redux/Reducer";
 
@@ -25,7 +25,9 @@ class DashboardBottomNavigation extends React.Component {
         return (
             <BottomNavigation
                 selectedIndex={this.props.selectedTab}
-                onSelect={this.onTabSelect}>
+                onSelect={this.onTabSelect}
+                style={{backgroundColor: '#1A2138'}}
+            >
                 <BottomNavigationTab
                     title='DASHBOARD'
                     icon={DashboardIcon}

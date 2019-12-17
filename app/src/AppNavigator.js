@@ -7,8 +7,8 @@ import Settings from "./components/SettingsTab";
 
 const AppNavigator = createStackNavigator(
     {
-        Login: Login,
         Dashboard: Dashboard,
+        Login: Login,
         Settings: Settings,
         Register: Register,
     },

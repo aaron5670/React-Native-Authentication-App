@@ -1,12 +1,13 @@
 import * as React from "react";
-import {Layout} from "react-native-ui-kitten";
 import {StyleSheet} from "react-native";
 import {connect} from 'react-redux';
+import {Layout} from "@ui-kitten/components";
 import DashboardNavBar from "../components/DashboardNavBar";
 import DashboardBottomNavigation from "../components/DashboardBottomNavigation";
-import {changeSelectedTabAction} from "../redux/Reducer";
 import PopularVideosTab from "../components/PopularVideosTab";
 import SettingsTab from "../components/SettingsTab";
+import {changeSelectedTabAction} from "../redux/Reducer";
+
 
 class Dashboard extends React.Component {
 

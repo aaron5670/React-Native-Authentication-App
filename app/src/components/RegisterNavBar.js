@@ -5,7 +5,7 @@ import {
     Layout,
     TopNavigation,
     TopNavigationAction,
-} from 'react-native-ui-kitten';
+} from "@ui-kitten/components";
 
 class RegisterNavBar extends React.Component {
 
