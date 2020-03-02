@@ -43,7 +43,7 @@ class Register extends React.Component {
     };
 
     checkUsernameAvailability() {
-        const url = 'http://aaronvandenberg.nl:3000/register?usernameCheck=true';
+        const url = 'http://localhost:3000/register?usernameCheck=true';
         let data = {
             username: this.state.usernameValue,
         };

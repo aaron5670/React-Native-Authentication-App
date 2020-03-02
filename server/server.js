@@ -20,8 +20,6 @@ const flash = require('connect-flash');
 const authenticationMiddleware = require('./authentication/middleware');
 const bcrypt = require('bcryptjs');
 
-const GitHubStrategy = require('passport-github').Strategy;
-
 //Install middlewear
 app.use(cookieParser());
 app.use(bodyParser.json());
@@ -158,7 +156,7 @@ app.get('/dashboard', authenticationMiddleware(), (req, res) => {
 });
 
 // Start the server.
-const port = process.env.PORT || 3000;
+const port = 3000;
 httpServer.listen(port, () => {
     mongoose.connect(`mongodb+srv://${dbConfig.USERNAME}:${dbConfig.PASSWORD}@${dbConfig.HOST}/${dbConfig.DB}?retryWrites=true&w=majority`, {
         useNewUrlParser: true,

@@ -5,7 +5,6 @@ import {Icon, Button, Input, Layout, Text} from "@ui-kitten/components";
 import {changeUsernameAction, changeUserStatusAction} from "../redux/Reducer";
 
 class Login extends React.Component {
-
     state = {
         usernameValue: '',
         passwordValue: '',
@@ -45,7 +44,7 @@ class Login extends React.Component {
     }
 
     fetchLogin() {
-        const url = 'http://aaronvandenberg.nl:3000/login';
+        const url = 'http://localhost:3000/login';
         let data = {
             username: this.state.usernameValue,
             password: this.state.passwordValue
